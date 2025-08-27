@@ -38,14 +38,14 @@ p_test_2 = [-509.12 -290.14 -359.6]'/1000;
 rot_vec = deg2rad([55.76 -153.20 58.44]);
 R_test_2 = rot(rot_vec/norm(rot_vec), norm(rot_vec));
 
-disp([p_0T_0 p_test_0])
-disp([R_test_0 R_06_0*R_6T])
+disp("[p_test_0 p_0T_0] ="); disp([p_test_0 p_0T_0])
+disp("[R_test_0 R_0T_0] ="); disp([R_test_0 R_06_0*R_6T])
 
-disp([p_0T_1 p_test_1])
-disp([R_test_1 R_06_1*R_6T])
+disp("[p_test_1 p_0T_1] ="); disp([p_test_1 p_0T_1])
+disp("[R_test_1 R_0T_1] ="); disp([R_test_1 R_06_1*R_6T])
 
-disp([p_0T_2 p_test_2])
-disp([R_test_2 R_06_2*R_6T])
+disp("[p_test_2 p_0T_2] ="); disp([p_test_2 p_0T_2])
+disp("[R_test_2 R_0T_2] ="); disp([R_test_2 R_06_2*R_6T])
 
 %% Forward kinematics using random joint angle
 q = rand_angle([6 1]);
